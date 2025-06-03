@@ -1,268 +1,42 @@
-{
-    "summary": {
-      "title": "ODB Diagnostic Trouble Codes Database",
-      "description": "Comprehensive database of automotive diagnostic trouble codes (DTCs) based on SAE J2012 and ISO 15031 standards",
-      "version": "1.0",
-      "author": "Abdulwahed",
-      "repository": "https://github.com/abdulwahed-sweden/odb-codes-to-json",
-      "generated_date": "2025-06-02T16:00:29.577558",
-      "data_source": "OBD-II Diagnostic Trouble Codes Database",
-      "standards": [
-        "SAE J2012",
-        "ISO 15031"
-      ],
-      "total_codes": 4316,
-      "code_breakdown": {
-        "P_codes": 3541,
-        "B_codes": 134,
-        "C_codes": 85,
-        "U_codes": 556
-      },
-      "categories": [
-        "Body",
-        "Chassis",
-        "Network",
-        "Powertrain"
-      ],
-      "systems": [
-        "Anti-lock Brake System",
-        "Auxiliary Emission Controls",
-        "Communication Bus",
-        "Computer Output Circuit",
-        "Data Integrity",
-        "Emissions System",
-        "Fuel Injector Circuit",
-        "Fuel and Air Metering",
-        "General",
-        "Hybrid/Electric Vehicle",
-        "Ignition System",
-        "Lighting System",
-        "Manufacturer Specific",
-        "Restraint System",
-        "Seat System",
-        "Software",
-        "Steering System",
-        "Tire Pressure Monitoring",
-        "Transmission",
-        "Vehicle Dynamics",
-        "Vehicle Speed Control",
-        "Wheel Speed Sensor"
-      ],
-      "system_breakdown": {
-        "Body": [
-          "General",
-          "Lighting System",
-          "Restraint System",
-          "Seat System"
-        ],
-        "Chassis": [
-          "Anti-lock Brake System",
-          "General",
-          "Steering System",
-          "Tire Pressure Monitoring",
-          "Vehicle Dynamics",
-          "Wheel Speed Sensor"
-        ],
-        "Network": [
-          "Communication Bus",
-          "Data Integrity",
-          "General",
-          "Software"
-        ],
-        "Powertrain": [
-          "Auxiliary Emission Controls",
-          "Computer Output Circuit",
-          "Emissions System",
-          "Fuel Injector Circuit",
-          "Fuel and Air Metering",
-          "General",
-          "Hybrid/Electric Vehicle",
-          "Ignition System",
-          "Manufacturer Specific",
-          "Transmission",
-          "Vehicle Speed Control"
-        ]
-      },
-      "severity_levels": [
-        "Info",
-        "Warning",
-        "Critical"
-      ],
-      "severity_breakdown": {
-        "Info": 1621,
-        "Critical": 545,
-        "Warning": 2150
-      },
-      "code_type_descriptions": {
-        "P": "Powertrain - Engine, transmission, and related systems",
-        "B": "Body - Interior systems, lighting, security, etc.",
-        "C": "Chassis - Braking, steering, suspension systems",
-        "U": "Network - Communication and control module issues"
-      }
-    },
-    "statistics": {
-      "total_processed": 4316,
-      "total_skipped": 6,
-      "by_category": {
-        "Powertrain": 3541,
-        "Body": 134,
-        "Chassis": 85,
-        "Network": 556
-      },
-      "by_severity": {
-        "Info": 1621,
-        "Critical": 545,
-        "Warning": 2150
-      }
-    },
-    "sample_codes": {
-      "Network": [
-        {
-          "code": "U0001",
-          "description": "High Speed CAN Communication Bus",
-          "category": "Network",
-          "system": "Communication Bus",
-          "severity": "Warning"
-        },
-        {
-          "code": "U0002",
-          "description": "High Speed CAN Communication Bus Performance",
-          "category": "Network",
-          "system": "Communication Bus",
-          "severity": "Warning"
-        },
-        {
-          "code": "U0003",
-          "description": "High Speed CAN Communication Bus (+) Open",
-          "category": "Network",
-          "system": "Communication Bus",
-          "severity": "Critical"
-        },
-        {
-          "code": "U0004",
-          "description": "High Speed CAN Communication Bus (+) Low",
-          "category": "Network",
-          "system": "Communication Bus",
-          "severity": "Warning"
-        },
-        {
-          "code": "U0005",
-          "description": "High Speed CAN Communication Bus (+) High",
-          "category": "Network",
-          "system": "Communication Bus",
-          "severity": "Warning"
-        }
-      ],
-      "Chassis": [
-        {
-          "code": "C0001",
-          "description": "TCS Control Channel \"A\" Valve 1 (Subfault)",
-          "category": "Chassis",
-          "system": "General",
-          "severity": "Info"
-        },
-        {
-          "code": "C0002",
-          "description": "TCS Control Channel \"A\" Valve 2 (Subfault)",
-          "category": "Chassis",
-          "system": "General",
-          "severity": "Info"
-        },
-        {
-          "code": "C0003",
-          "description": "TCS Control Channel \"B\" Valve 1 (Subfault)",
-          "category": "Chassis",
-          "system": "General",
-          "severity": "Info"
-        },
-        {
-          "code": "C0004",
-          "description": "TCS Control Channel \"B\" Valve 2 (Subfault)",
-          "category": "Chassis",
-          "system": "General",
-          "severity": "Info"
-        },
-        {
-          "code": "C0010",
-          "description": "Left Front Inlet Control (Subfault)",
-          "category": "Chassis",
-          "system": "General",
-          "severity": "Info"
-        }
-      ],
-      "Body": [
-        {
-          "code": "B0001",
-          "description": "Driver Frontal Stage 1 Deployment Control (Subfault)",
-          "category": "Body",
-          "system": "General",
-          "severity": "Info"
-        },
-        {
-          "code": "B0002",
-          "description": "Driver Frontal Stage 2 Deployment Control (Subfault)",
-          "category": "Body",
-          "system": "General",
-          "severity": "Info"
-        },
-        {
-          "code": "B0003",
-          "description": "Driver Frontal Stage 3 Deployment Control (Subfault)",
-          "category": "Body",
-          "system": "General",
-          "severity": "Info"
-        },
-        {
-          "code": "B0004",
-          "description": "Driver Knee Bolster Deployment Control (Subfault)",
-          "category": "Body",
-          "system": "General",
-          "severity": "Info"
-        },
-        {
-          "code": "B0005",
-          "description": "Collapsible Steering Column Deployment Control (Subfault)",
-          "category": "Body",
-          "system": "General",
-          "severity": "Info"
-        }
-      ],
-      "Powertrain": [
-        {
-          "code": "P0000",
-          "description": "ISO/SAE Reserved",
-          "category": "Powertrain",
-          "system": "Fuel and Air Metering",
-          "severity": "Info"
-        },
-        {
-          "code": "P0001",
-          "description": "Fuel Volume Regulator Control Circuit/Open",
-          "category": "Powertrain",
-          "system": "Fuel and Air Metering",
-          "severity": "Critical"
-        },
-        {
-          "code": "P0002",
-          "description": "Fuel Volume Regulator Control Circuit Range/Performance",
-          "category": "Powertrain",
-          "system": "Fuel and Air Metering",
-          "severity": "Warning"
-        },
-        {
-          "code": "P0003",
-          "description": "Fuel Volume Regulator Control Circuit Low",
-          "category": "Powertrain",
-          "system": "Fuel and Air Metering",
-          "severity": "Warning"
-        },
-        {
-          "code": "P0004",
-          "description": "Fuel Volume Regulator Control Circuit High",
-          "category": "Powertrain",
-          "system": "Fuel and Air Metering",
-          "severity": "Warning"
-        }
-      ]
-    }
+[
+  {
+    "make": "Toyota",
+    "model": "Camry",
+    "year": 2023
+  },
+  {
+    "make": "Honda",
+    "model": "Accord",
+    "year": 2024
+  },
+  {
+    "make": "Ford",
+    "model": "Mustang",
+    "year": 2023
+  },
+  {
+    "make": "Tesla",
+    "model": "Model 3",
+    "year": 2023
+  },
+  {
+    "make": "BMW",
+    "model": "3 Series",
+    "year": 2024
+  },
+  {
+    "make": "Mercedes-Benz",
+    "model": "C-Class",
+    "year": 2023
+  },
+  {
+    "make": "Audi",
+    "model": "A4",
+    "year": 2024
+  },
+  {
+    "make": "Volkswagen",
+    "model": "Passat",
+    "year": 2023
   }
+]
